@@ -1,18 +1,24 @@
 {
-  "name": "primevue-nuxtjs-quickstart",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
-  },
-  "dependencies": {
-    "core-js": "^3.6.5",
-    "nuxt": "^2.14.6",
-    "primevue": "2.3.0",
-    "primeicons": "4.1.0"
-  },
-  "devDependencies": {}
+    "name": "primevue-nuxtjs-quickstart",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "PORT=3100 nuxt",
+        "build": "nuxt build",
+        "start": "nuxt start",
+        "generate": "nuxt generate",
+        "lint": "eslint --ext .ts,.js,.vue ."
+    },
+    "dependencies": {
+        "@nuxtjs/eslint-config-typescript": "^6.0.1",
+        "core-js": "^3.6.5",
+        "eslint": "^7.28.0",
+        "nuxt": "^2.14.6",
+        "primeicons": "4.1.0",
+        "primevue": "2.3.0"
+    },
+    "devDependencies": {
+        "@nuxt/types": "^2.15.6",
+        "@nuxt/typescript-build": "^2.1.0"
+    }
 }

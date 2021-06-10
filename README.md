@@ -1,4 +1,6 @@
-# primevue-nuxt-quickstart
+# primevue-nuxt-typescript-eslint-quickstart
+
+https://github.com/primefaces/primevue-nuxtjs-quickstart
 
 ## Build Setup
 
@@ -15,6 +17,15 @@ $ npm run start
 
 # generate static project
 $ npm run generate
+
+# run linter
+$ npm run lint
 ```
+
+A Nuxt starter project with
+
+  * Typescript
+  * Eslint  
+  * Primevue UI toolkit
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

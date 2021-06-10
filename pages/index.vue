@@ -3,37 +3,36 @@
     <div>
       <Logo />
       <Toast />
-      
+
       <form @submit.prevent="greet">
-          <InputText type="text" v-model="text"/>
-          <Button type="submit" label="Submit"/>
+        <InputText v-model="text" type="text" />
+        <Button type="submit" label="Submit" />
       </form>
-     
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       text: null
     }
   },
   methods: {
-			greet() {
-				this.$toast.add({severity: 'info', summary: 'Hello '  + this.text});
-			}
+    greet () {
+      this.$toast.add({ severity: 'info', summary: 'Hello ' + this.text })
+    }
   }
 }
 </script>
 
 <style>
 .container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 </style>
